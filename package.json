@@ -6,7 +6,7 @@
 	"scripts": {
 		"e2e": "XDG_CONFIG_HOME=/tmp/cyhome1 cypress run",
 		"open:e2e": "cypress open",
-		"test:ci":"jest --ci --runInBand --reporters=default --reporters=jest-junit",
+		"test:ci": "jest --ci --runInBand --reporters=default --reporters=jest-junit",
 		"e2e:env": "cp cypress.env cypress.env.json",
 		"cypress:run:chrome": "cypress run --browser chrome",
 		"cypress:run:firefox": "cypress run --browser firefox",
@@ -44,5 +44,8 @@
 		"mochawesome": "^6.1.1",
 		"mochawesome-merge": "^4.0.3",
 		"mochawesome-report-generator": "^5.1.0"
+	},
+	"dependencies": {
+		"jest-junit": "^12.0.0"
 	}
 }
