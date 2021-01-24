@@ -1,0 +1,19 @@
+{
+  "name": "cypressSetup",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:headless": "cypress run",
+    "cypress:report": "generate-mochawesome-report"
+  },
+  "author": "guru",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "cypress": "^6.0.1",
+    "cypress-mochawesome-reporter": "^1.3.0"
+  }
+}
