@@ -75,3 +75,7 @@ workflows:
       - test2CMSPage:
           requires:
             - build
+      - cypress/run:
+          executor: cypress/base-14
+          parallelism: 3
+
