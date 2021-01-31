@@ -10,7 +10,18 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add("login", (email, password) => { ... })
+Cypress.Commands.add("login", (email, password) => { 
+    // cypress test...
+     // click on button 
+     cy.get('#input-email').should('be.visible')
+     .type(email)
+     
+     cy.get('#input-password').type(password);
+     cy.get('#content > div > div:nth-child(2) > div > form > input').click();
+
+ // verify..
+
+})
 //
 //
 // -- This is a child command --
