@@ -6,3 +6,4 @@ workflows:
     jobs:
       - cypress/run:
           executor: cypress/base-14
+          parallelism: 2
