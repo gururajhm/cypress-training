@@ -4,6 +4,6 @@ orbs:
 workflows:
   build:
     jobs:
-    parallelism: 4
       - cypress/run:
           executor: cypress/base-14
+          parallelism: 4
