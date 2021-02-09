@@ -1,5 +1,4 @@
 steps:
-    ... npm setup ...
     - name: 'ubuntu'
       id: Install Cypress Dependencies
       args:
@@ -12,7 +11,7 @@ steps:
               'libgconf-2-4',
               'libnss3',
               'libxss1',
-              libasound2',
+              'libasound2',
           ]
     - name: 'gcr.io/cloud-builders/npm:current'
       id: End to End Test
