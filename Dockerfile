@@ -51,8 +51,8 @@ ARG HOSTNAME=1
 RUN npm run cy:headless
 
 # production image - without Cypress and node modules!
-FROM busybox as PROD
-COPY --from=TEST /app/public /public
+#FROM busybox as PROD
+#COPY --from=TEST /app/public /public
 # nothing to do - Zeit should take care of serving static content
 # we would only need a command if we want to use this image locally
 
