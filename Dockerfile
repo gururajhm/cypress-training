@@ -31,9 +31,9 @@ RUN npm ci
 COPY cypress cypress
 COPY cypress.json .
 # copy what to test
-COPY public public
-RUN ls -la
-RUN ls -la public
+#COPY public public
+#RUN ls -la
+#RUN ls -la public
 
 #
 # ALWAYS run e2e Cypress tests
