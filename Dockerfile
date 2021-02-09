@@ -48,7 +48,7 @@ ARG HOSTNAME=1
 # if you run "docker build . --build-arg HOSTNAME=foo"
 # it will bust this cache and it will rerun all commands from here
 
-RUN npm cy:headless
+RUN npm run cy:headless
 
 # production image - without Cypress and node modules!
 FROM busybox as PROD
